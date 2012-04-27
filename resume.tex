@@ -1,33 +1,40 @@
 % LaTeX resume using res.cls
-\documentclass[line,margin]{res} 
+\documentclass[line]{res} 
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 
+\usepackage[margin=.75in]{geometry}
 \begin{document}
 
 \name{Eric A. Fode}
 % \address used twice to have two lines of address
-\address{905 Elm St., LA Hall, Room 142, Cheney, WA, 99004}
-\address{509-699-1184}
+
 \address{ericfode@gmail.com}
 
  
 \begin{resume}
  
+\section{OBJECTIVE} Obtain a position that provides opportunities for me to advance my knowledge of computer science.
+
+\section{EDUCATION}	Eastern Washington University (2012-2014) Computer Science.\\
+					Whitworth University (2008-2010) Computer Science.
+					
  
-\section{EDUCATION} {\sl Bachelor of Science,} Computer Science (In Progress)\\
-					Whitworth University (2008-2010) \\
-					Eastern Washington University (2012-2014)
  
- 
-\section{TECHNICAL \\ SKILLS} {\sl Languages \& Software:} C\#, Java, C++, C, Go,  JavaScript, ActionScript, VHDL, Intel Assembler, \LaTeX, Python, Perl, Ruby, Erlang, J.\\
-                {\sl Operating Systems:} Windows, Unix, Android, iOS.
+\section{TECHNICAL SKILLS} {\sl Languages \& Software:} C\# (4 Years),C++ (4 Years), C (3 Years), JavaScript (3 Years), ActionScript (3 Years),Python (3 Years), Java (2 Years), Go (2 Years), \LaTeX (1 Year), Intel Assembler (1 Year), Ruby (1 Year), Erlang (1 Year), VHDL ($<$1 Year).\\
+{\sl Operating Systems:} Windows, Unix, Android, iOS.
+
                 
-\section{PROJECTS} {\sl Medminder}
+\section{PROJECTS} 
+				{\sl DTL (Data Translation Language)} \hfill Spring 2012 (Planning)
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 	\item Defines backing data structures, language interfaces, provide a way to transition data between different backing structures, abstracts data storage away from languages.
+				 \end{itemize}
+				{\sl Medminder} \hfill Winter 2011 (Dormant)
                  \begin{itemize}  \itemsep -2pt %reduce space between items
                 	\item Tracks the psychological and physiological effects of medications.
-                	\item Holds and searches for metadata about side-effects of medications.
-                	\item Gathers data logged by the users (with permission) to help establish better side effect profiles and efficacy records for pharmaceuticals.
+                	\item Holds and searches for metadata about side-effects of medications using NLM RxNorm, NLM RxTerms, and NLM pillbox APIs.
+                	\item Gathers data logged by the users (with permission) to help establish better side effect profiles.
                 \end{itemize}
 \section{EXPERIENCE} 
  				{\sl IT Intern} \hfill Summer-Winter 2011\\
@@ -35,7 +42,7 @@
                  \begin{itemize}  \itemsep -2pt % reduce space between items
 					 \item Extended	ArcFM Silverlight application to include unique geographical searches.
 					 \item Maintained and documented various extensions for ArcGIS.
-					 \item Used JavaScript, C\#, ESRI GIS APIs, VB6, Asp.net MVC.
+					 \item Used JavaScript, C\#, ESRI ArcGIS APIs, VB6, Asp.NET MVC.
 				 \end{itemize}
 				 
 				{\sl Quality Engineering Intern} \hfill Summer 2009, Summer-Winter 2010 \\
@@ -43,9 +50,8 @@
                  \begin{itemize}  \itemsep -2pt % reduce space between items
 	                 \item Developed a system to automatically schedule tests necessary to show that recent changes did not modify the integrity of the code based on available tests.
 	                \item Integrated with testing automation system, VM management system, and code coverage analysis software.
-	                 \item Integrated FoneMonkey into the Wired viewer for test automation.
-	                 \item Developed server software for determining if a test had passed depending on screen state.
-	                 \item Designed system to manage tests and results for iDevice automation.
+	                 \item Integrated FoneMonkey into the Wired IPad viewer for test automation.
+	                 \item Developed server software for determining if a test had passed depending on screen state and manage results.
 	                 \item Used XCode, Objective-C, Java, SQL server, Bullseye Code Coverage, and Glassfish.
  				 \end{itemize}
  								 
@@ -55,21 +61,11 @@
 	                 \item Finished a research project to visualize DNA.
 	                 \item Presented paper at Spokane Regional Intercollegiate Research Conference (SIRC) titled "CODONS - Key-based visualization of genetic sequences".
                  \end{itemize} 				
-                 
-                 
-
-
-					
-\section{COMMUNITY \\ SERVICE}  
-Participated in multiple mission trips to Mexico, and Mississippi. \\
-Volunteered as a cook at young life camps.
-
-\section{EXTRA-CURRICULAR \\ ACTIVITIES}
+                 				
+\section{EXTRA-CURRICULAR ACTIVITIES}
 	Answer Questions on StackOverflow.com.\\
 	Participated in 3 ACM programming competitions.\\
-	Participate in TopCoder competitions.\\
 	Taking a class on Cryptography from the Univeristy of Virginia.\\
-	Participated in the design and construction of a solar car.
 \end{resume}
 \end{document}
 
